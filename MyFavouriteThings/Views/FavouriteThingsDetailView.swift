@@ -9,7 +9,7 @@ import SwiftUI
 struct FavouriteThingsDetailView: View {
 
     // MARK: Stored properties
-    let FavouriteThingsToShow: FavouriteThings
+    let FavouriteThingsToShow: FavouriteThing
 
     // MARK: Computed properties
     var body: some View {
