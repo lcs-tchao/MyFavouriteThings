@@ -86,7 +86,7 @@ struct DetailView: View {
                                             .frame(width: 145, height: 80)
                                             .position(x: 60, y: 48)
                                         Text(playerInfo.Date)
-                                            .foregroundColor(.black)
+                                            .foregroundColor(playerInfo.color1)
                                         .font(.custom("Chalkduster", size: 18))
                                         .position(x: 60, y: 25)
                                     }
@@ -165,8 +165,8 @@ struct DetailView: View {
                                         .position(x: 185, y: 95)
                                     Image(playerInfo.teamlogo)
                                         .resizable().aspectRatio( contentMode: .fit)
-                                        .frame(width: 90, height: 90)
-                                        .position(x: 185, y: 85)
+                                        .frame(width: 180, height: 90)
+                                        .position(x: 185, y: 82)
                                     
                                     //player name
                                     
@@ -180,7 +180,7 @@ struct DetailView: View {
                                         .frame(width: 250, height: 150)
                                         .position(x: 187, y: 73)
                                     Text(playerInfo.name)
-                                        .foregroundColor(.black)
+                                        .foregroundColor(playerInfo.color1)
                                         .font(.custom("Chalkduster", size: 22))
                                         .position(x: 187, y: 13)
                                     
@@ -193,61 +193,61 @@ struct DetailView: View {
                                             Text("Career Stats")
                                                 .bold()
                                                 .padding(.trailing,200)
-                                              .foregroundColor(.black)
+                                              .foregroundColor(playerInfo.color1)
                                                 .font(.custom("Chalkduster", size: 20))
                                             HStack{
                                                 VStack{
                                                     Text(playerInfo.GP)
-                                                        .foregroundColor(.black)
+                                                        .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                         
                                                     Text(playerInfo.GPNumber)
                                                         
-                                                        .foregroundColor(.black)
+                                                        .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
                                                 .padding(.horizontal,15)
                                                 VStack{
                                                     Text(playerInfo.G)
                                                         
-                                                        .foregroundColor(.black)
+                                                        .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                     Text(playerInfo.GNumber)
                                                         
-                                                        .foregroundColor(.black)
+                                                        .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
                                                 .padding(.horizontal,15)
                                                 VStack{
                                                     Text(playerInfo.A)
                                                        
-                                                        .foregroundColor(.black)
+                                                        .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                     Text(playerInfo.ANumber)
                                                         
-                                                        .foregroundColor(.black)
+                                                        .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
                                                 .padding(.horizontal,15)
                                                 VStack{
                                                     Text(playerInfo.P)
+                                                        .foregroundColor(playerInfo.color1)
                                                         
-                                                        
-                                                        .font(.custom("Chalkduster", size: 15))
+                                           .font(.custom("Chalkduster", size: 15))
                                                     Text(playerInfo.PNumber)
                                                         
-                                                        .foregroundColor(.black)
+                                                .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
                                                 .padding(.horizontal,15)
                                                 VStack{
                                                     Text(playerInfo.positiveAndNegative)
                                                         
-                                                        .foregroundColor(.black)
+                                                        .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                     Text(playerInfo.PNNumber)
                                                        
-                                                        .foregroundColor(.black)
+                                                        .foregroundColor(playerInfo.color1)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
                                                 .padding(.horizontal,15)
@@ -256,7 +256,7 @@ struct DetailView: View {
                                             .padding(.bottom, 10)
                                             .frame(height: 30)
                                                                                   Text(playerInfo.description)
-                                                .foregroundColor(.black)
+                                                .foregroundColor(playerInfo.color1)
                                                 .font(.custom("Chalkduster", size: 18))
                                                 .bold()
                                                 .padding(.leading,15)
@@ -292,7 +292,7 @@ struct DetailView: View {
  
 #Preview {
     NavigationStack {
-        DetailView(playerInfo: bostonBruins)
+        DetailView(playerInfo: BobbyOrr)
     }
 }
 //}

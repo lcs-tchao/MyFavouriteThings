@@ -36,11 +36,11 @@ struct CardInformation: Identifiable {
     
 }
 
-let bostonBruins = CardInformation(
-    name: "Boston Bruins",
-    description: "The Boston Bruins are the best team in the league due to their unmatched skill, relentless work ethic, and iconic history. With a legacy of legendary players, a fierce competitive spirit, and a loyal fan base, the Bruins consistently dominate on both offense and defense, securing their place at the top.",
-    image: "Hockey",
-    Date: "1968-1978",
+let BobbyOrr = CardInformation(
+    name: "Bobby Orr",
+    description: "Bobby Orr revolutionized hockey by redefining the role of the defenseman, blending offensive and defensive play in ways never seen before. Playing for the Boston Bruins from 1966 to 1976, Orr’s unmatched skating ability and vision made him a game-changer. He led the Bruins to two Stanley Cup championships in 1970 and 1972, leaving an indelible mark on the sport. Orr’s dynamic playing style transformed how defensemen contributed to the offense, paving the way for future generations. His influence extended beyond individual achievements, fundamentally altering the team’s strategy and making hockey faster and more exciting for fans around the world.",
+    image: "BobbyOrr",
+    Date: "1968-1979",
     CareerStats: "Career Stats",
     GP: "GP",
     GPNumber: "657",
@@ -55,62 +55,63 @@ let bostonBruins = CardInformation(
     ,backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.white]), startPoint: .top, endPoint: .bottom),
     teamlogo: "B Logo",color1:.black,color2:.yellow,color3: .white)
 
-let instagram = CardInformation(name: "Instagram",
-                                     description: "Instagram is a popular social media platform that allows users to share photos, videos, and stories. With creative editing tools and interactive features, it’s perfect for connecting, discovering trends, and showcasing your life visually with others.",
-                                     image: "instagram",
-                                     Date: "1968-1978",
+let SidneyCrosby = CardInformation(name: "Sidney Crosby",
+                                description: "Sidney Crosby is widely regarded as one of the greatest hockey players of his generation, known for his exceptional skill, leadership, and hockey IQ. Playing for the Pittsburgh Penguins since 2005, Crosby has led the team to three Stanley Cup championships in 2009, 2016, and 2017. His ability to dominate both offensively and defensively makes him a versatile player, consistently contributing in critical moments. Crosby’s leadership as team captain has been instrumental in the Penguins’ success, inspiring teammates and fans alike. His legacy extends beyond his individual accolades, as he continues to shape the future of hockey with his excellence.",
+                                    image: "Sidney Crosby",
+                                     Date: "2005-Now",
                                      CareerStats: "CareerStats",
                                      GP: "GP",
-                                     GPNumber: "657",
+                                     GPNumber: "1297",
                                      G: "G",
-                                     GNumber: "270",
+                                     GNumber: "600",
                                      A: "A",
-                                     ANumber: "645",
+                                     ANumber: "1020",
                                      P: "P",
-                                     PNumber: "915",
+                                     PNumber: "1620",
                                      positiveAndNegative: "+/-",
-                                     PNNumber: "+582",backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.white]), startPoint: .top, endPoint: .bottom),
-                                     teamlogo: "B Logo",color1:.black,color2:.yellow,color3: .white)
+                                     PNNumber: "+210",
+                                backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.black, Color.yellow]), startPoint: .top, endPoint: .bottom),
+                                teamlogo: "P Logo",color1:.yellow,color2:.black,color3: .white)
 
-let music = CardInformation(name: "Music",
-                                 description: "Music is loved worldwide for its ability to evoke emotions, tell stories, and create connections. It helps people relax, energize, or reflect, offering an escape from reality. With diverse genres, there’s something for everyone to enjoy and feel inspired.",
-                                 image: "Music",
-                                 Date: "1968-1978",
+let AustonMatthews = CardInformation(name: "Auston Matthews",
+                                 description: "Auston Matthews is known for his elite scoring ability, quick release, and strong two-way play, making him one of the most dynamic players in the NHL. Since joining the Toronto Maple Leafs in 2016, Matthews has consistently been a top offensive contributor, winning the Rocket Richard Trophy for leading the league in goals in 2021 and 2022. His debut season was historic, scoring four goals in his first NHL game. Matthews’ skill set and leadership have been pivotal in the Leafs' resurgence as a competitive force. His influence on and off the ice continues to elevate the team and inspire fans worldwide.",
+                                 image: "Auston Matthews",
+                                 Date: "2016-Now",
                                  CareerStats: "CareerStats",
                                  GP: "GP",
-                                 GPNumber: "657",
+                                 GPNumber: "576",
                                  G: "G",
-                                 GNumber: "270",
+                                 GNumber: "373",
                                  A: "A",
-                                 ANumber: "645",
+                                 ANumber: "289",
                                  P: "P",
-                                 PNumber: "915",
+                                 PNumber: "662",
                                  positiveAndNegative: "+/-",
-                                 PNNumber: "+582",backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.white]), startPoint: .top, endPoint: .bottom),
-                                 teamlogo: "B Logo",color1:.black,color2:.yellow,color3: .white)
+                                     PNNumber: "+144",backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.white, Color.blue]), startPoint: .top, endPoint: .bottom),
+                                     teamlogo: "T Logo",color1:.blue,color2:.white, color3: .gray)
 
 
-let hockey = CardInformation(name: "Hockey",
-                                  description: "Hockey is an exhilarating sport known for its speed, skill, and teamwork. Played on ice or field, it b/Users/TChao/G11 Computer Science /Trading cards V2/MyFavouriteThings/Model/Team.swiftrings players and fans together through thrilling competition. Its rich history and passionate community make it a beloved game worldwide.",
-                                  image: "Hockey myself",
-                                  Date: "1968-1978",
+let AlexOvechkin = CardInformation(name: "Alex Ovechkin",
+                                  description: "Alex Ovechkin is known for his powerful shot, physical presence, and exceptional goal-scoring ability, making him one of the most prolific players in NHL history. Since joining the Washington Capitals in 2005, Ovechkin has been a dominant offensive force, consistently ranking among the league’s top scorers. He has won the Rocket Richard Trophy multiple times and became the eighth player in NHL history to score 800 career goals. In 2018, Ovechkin led the Capitals to their first-ever Stanley Cup championship, solidifying his legacy. His passion and dedication continue to inspire teammates and fans, leaving an enduring mark on the game.",
+                                  image: "Alex Ovechkin",
+                                  Date: "2005-Now",
                                   CareerStats: "CareerStats",
                                   GP: "GP",
-                                  GPNumber: "657",
+                                  GPNumber: "1444",
                                   G: "G",
-                                  GNumber: "270",
+                                  GNumber: "868",
                                   A: "A",
-                                  ANumber: "645",
+                                  ANumber: "707",
                                   P: "P",
-                                  PNumber: "915",
+                                  PNumber: "1575",
                                   positiveAndNegative: "+/-",
-                                  PNNumber: "+582",backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.white]), startPoint: .top, endPoint: .bottom),
-                                  teamlogo: "B Logo",color1:.black,color2:.yellow,color3: .white)
+                             PNNumber: "+60",backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .top, endPoint: .bottom),
+                             teamlogo: "C Logo",color1:.blue,color2:.red,color3: .black)
 
 
-let videoGames = CardInformation(name: "Video Games",
+let ConnorMcDavid = CardInformation(name: "Connor McDavid",
                                       description: "Video games are an interactive entertainment medium offering players immersive worlds, exciting challenges, and creative storytelling. From action-packed adventures to strategic simulations, they provide endless fun and social connection. Loved globally, gaming sparks imagination and fosters a vibrant, diverse community.",
-                                      image: "video games",
+                                      image: "Connor McDavid",
                                       Date: "1968-1978",
                                       CareerStats: "CareerStats",
                                       GP: "GP",
@@ -122,35 +123,16 @@ let videoGames = CardInformation(name: "Video Games",
                                       P: "P",
                                       PNumber: "915",
                                       positiveAndNegative: "+/-",
-                                      PNNumber: "+582",backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.white]), startPoint: .top, endPoint: .bottom),
-                                      teamlogo:"B Logo",color1:.black,color2:.yellow,color3: .white)
-
-
-let basketball = CardInformation(name: "basketball",
-                                      description: "Basketball is a fast-paced sport that combines skill, strategy, and athleticism. Played indoors or outdoors, it encourages teamwork and competition. With its global appeal and exciting gameplay, basketball inspires players and fans alike, creating a vibrant and dynamic community.",
-                                      image: "video games",
-                                      Date: "1968-1978",
-                                      CareerStats: "CareerStats",
-                                      GP: "GP",
-                                      GPNumber: "657",
-                                      G: "G",
-                                      GNumber: "270",
-                                      A: "A",
-                                      ANumber: "645",
-                                      P: "P",
-                                      PNumber: "915",
-                                      positiveAndNegative: "+/-",
-                                      PNNumber: "+582",
-                                      backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.white]), startPoint: .top, endPoint: .bottom),
-                                      teamlogo: "B Logo",color1:.black,color2:.yellow,color3: .white)
+                                    PNNumber: "+582",backgroundGradient: LinearGradient(gradient: Gradient(colors: [Color.orange, Color.blue]), startPoint: .top, endPoint: .bottom),
+                                    teamlogo:"O Logo",color1:.blue,color2:.orange,color3: .white)
 
 
 
 let TradingCardsplayer = [
-    bostonBruins,
-    instagram,
-    music,
-    hockey,
-    videoGames,
-    basketball,
+    BobbyOrr,
+    SidneyCrosby,
+    AustonMatthews,
+    AlexOvechkin,
+    ConnorMcDavid,
+    
 ]

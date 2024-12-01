@@ -15,22 +15,12 @@ struct TradingCardsView: View{
                 .frame(width: 380, height: 220)
             
             HStack{
-//                Image(providedFavouriteThings.image)
-//                    .resizable()
-//                    .scaledToFill()
-//                    .frame(width: 150,height: 150,alignment: .center)
-//                    .clipped()
+
                 Image(cInfo.teamlogo)
                
                 VStack(alignment: .leading){
                     
-//                    Text(providedFavouriteThings.name).italic()
-//                        .underline()
-//                        .font(.custom("Bradley Hand", size: 50))
-//                        .foregroundStyle(.cyan)
-                   
-                    /*Text(providedFavouriteThings.description)*/
-                    
+
                 }
                 
             }
@@ -41,5 +31,5 @@ struct TradingCardsView: View{
 }
 
 #Preview{
-    TradingCardsView(cInfo: hockey)
+    TradingCardsView(cInfo: AlexOvechkin)
 }

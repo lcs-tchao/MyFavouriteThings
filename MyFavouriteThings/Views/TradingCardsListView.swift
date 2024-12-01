@@ -6,7 +6,7 @@
 //
 import SwiftUI
  
-struct FavoriteThingsListView: View {
+struct TradingCardsListView: View {
     var body: some View {
         NavigationStack {
            List(TradingCardsplayer)
@@ -19,7 +19,7 @@ struct FavoriteThingsListView: View {
                                 }
                 
                             }
-                            .navigationTitle("Favourite Things")
+                            .navigationTitle("Trading Cards")
                             }
                 
             }
@@ -27,6 +27,6 @@ struct FavoriteThingsListView: View {
         
         
         #Preview {
-            FavoriteThingsListView()
+            TradingCardsListView()
         }
     

@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct MyFavouriteThingsApp: App {
+struct TradingCardsApp: App {
     var body: some Scene {
         WindowGroup {
-            DetailView(playerInfo: bostonBruins)
+            TradingCardsListView()
         }
     }
 }
