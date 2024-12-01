@@ -14,6 +14,8 @@ struct DetailView: View {
     var body: some View {
         
                 ZStack{
+                    
+                    //Background Gradient
                     HStack {
                         playerInfo.backgroundGradient
                     }
@@ -126,7 +128,7 @@ struct DetailView: View {
                                 
                                 VStack{
                                     ZStack{
-                                
+                                        
                                         Image(playerInfo.image)
                                             .resizable().aspectRatio( contentMode: .fit)
                                             .frame(width: 460, height: 445)
@@ -162,98 +164,108 @@ struct DetailView: View {
                                         .frame(width: 280, height: 120)
                                         .position(x: 185, y: 95)
                                     Image(playerInfo.teamlogo)
-                                .resizable().aspectRatio( contentMode: .fit)
-                                                    .frame(width: 90, height: 90)
-                                                    .position(x: 185, y: 85)
+                                        .resizable().aspectRatio( contentMode: .fit)
+                                        .frame(width: 90, height: 90)
+                                        .position(x: 185, y: 85)
                                     
-                                  //player name
+                                    //player name
                                     
                                     parallelogram3()
                                         .fill(playerInfo.color1)
-                                                .frame(width: 285, height: 180)
-                                                .position(x: 187, y: 85)
+                                        .frame(width: 285, height: 180)
+                                        .position(x: 187, y: 85)
                                     
                                     parallelogram3()
                                         .fill(playerInfo.color2)
-                                                .frame(width: 250, height: 150)
-                                                .position(x: 187, y: 73)
+                                        .frame(width: 250, height: 150)
+                                        .position(x: 187, y: 73)
                                     Text(playerInfo.name)
                                         .foregroundColor(.black)
                                         .font(.custom("Chalkduster", size: 22))
                                         .position(x: 187, y: 13)
                                     
                                 }
-                                
+                            }
+                            .offset(y:120)
+                            
                                 ScrollView(.vertical){
-                                        VStack{
-                                            Text(playerInfo.CareerStats)
+                                        LazyVStack{
+                                            Text("Career Stats")
                                                 .bold()
-                                                .offset(x: -100, y: 140)
-                                                .foregroundColor(.black)
+                                                .padding(.trailing,200)
+                                              .foregroundColor(.black)
                                                 .font(.custom("Chalkduster", size: 20))
                                             HStack{
                                                 VStack{
                                                     Text(playerInfo.GP)
-                                                        .offset(x: -70, y: 150)
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
+                                                        
                                                     Text(playerInfo.GPNumber)
-                                                        .offset(x: -70, y: 160)
+                                                        
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
+                                                .padding(.horizontal,15)
                                                 VStack{
                                                     Text(playerInfo.G)
-                                                        .offset(x: -40, y: 150)
+                                                        
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
                                                     Text(playerInfo.GNumber)
-                                                        .offset(x: -40, y: 160)
+                                                        
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
+                                                .padding(.horizontal,15)
                                                 VStack{
                                                     Text(playerInfo.A)
-                                                        .offset(x: -10, y: 150)
+                                                       
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
                                                     Text(playerInfo.ANumber)
-                                                        .offset(x: -10, y: 160)
+                                                        
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
+                                                .padding(.horizontal,15)
                                                 VStack{
                                                     Text(playerInfo.P)
-                                                        .offset(x: 20, y: 150)
-                                                        .foregroundColor(.black)
+                                                        
+                                                        
                                                         .font(.custom("Chalkduster", size: 15))
                                                     Text(playerInfo.PNumber)
-                                                        .offset(x: 20, y: 160)
+                                                        
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
+                                                .padding(.horizontal,15)
                                                 VStack{
                                                     Text(playerInfo.positiveAndNegative)
-                                                        .offset(x: 50, y: 150)
+                                                        
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
                                                     Text(playerInfo.PNNumber)
-                                                        .offset(x: 50, y: 160)
+                                                       
                                                         .foregroundColor(.black)
                                                         .font(.custom("Chalkduster", size: 15))
                                                 }
+                                                .padding(.horizontal,15)
                                             }
-                                            Text(playerInfo.description)
+                                            .padding(.vertical,10)
+                                            .padding(.bottom, 10)
+                                            .frame(height: 30)
+                                                                                  Text(playerInfo.description)
                                                 .foregroundColor(.black)
                                                 .font(.custom("Chalkduster", size: 18))
-                                                .offset(x: 6, y: 190)
                                                 .bold()
-                                            
-                                          Spacer()
+                                                .padding(.leading,15)
+                                            Spacer()
                                             
                                         }
+                                        .padding(.bottom,200)
                                     }
-                                
+                                .frame(height:235)
                                
                                     
                                     
@@ -263,16 +275,9 @@ struct DetailView: View {
                                 
                                 
                             }
-                           
-                            
-                        }
-                        
                     }
                 
                         .padding()
-                
-                
-                
                     
                 
                 
