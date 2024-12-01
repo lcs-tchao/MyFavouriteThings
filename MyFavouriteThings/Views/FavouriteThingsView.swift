@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct FavouriteThingsView: View{
-    let providedFavouriteThings: FavouriteThing
+    let providedFavouriteThings: TradingCardsV2Player
     
     var body: some View {
         ZStack{
@@ -40,5 +40,5 @@ struct FavouriteThingsView: View{
 }
 
 #Preview{
-    FavouriteThingsView(providedFavouriteThings: Hockey)
+    FavouriteThingsView(providedFavouriteThings: hockey)
 }

@@ -6,24 +6,30 @@
 //
 import SwiftUI
  
-struct FavoriteThingsListView: View {
-    var body: some View {
-        NavigationStack {
-            List(favouriteThings)
-            { currentFavouriteThings in
-                NavigationLink{
-                    FavouriteThingsDetailView(FavouriteThingsToShow: currentFavouriteThings)
-                }label: { FavouriteThingsView(providedFavouriteThings: currentFavouriteThings)
-                }
-                
-            }
-            .navigationTitle("Favourite Things")
-            }
-            
-        }
-    }
-
- 
-#Preview {
-    FavoriteThingsListView()
-}
+//struct FavoriteThingsListView: View {
+//    var body: some View {
+//        NavigationStack {
+//            List(TradingCardsplayer)
+//            { currentTradingCards in
+                //                Rectangle()
+                //                    .fill(
+                //                        LinearGradient(colors: TradingCardsplayer.startColor,TradingCardsplayer.endcolor], startPoint:.leading, endPoint: .trailing)
+                //                    )
+                //
+                //                NavigationLink{
+                //                    TradingCardsV2DetailView( TradingCardsV2DetailView: currentTradingCards)
+                //                }label: { FavouriteThingsView(providedFavouriteThings: currentTradingCards)
+                //                }
+                //
+                //            }
+                //            .navigationTitle("Favourite Things")
+                //            }
+//                
+//            }
+//        }
+        
+        
+        //#Preview {
+        //    FavoriteThingsListView()
+        //}
+    

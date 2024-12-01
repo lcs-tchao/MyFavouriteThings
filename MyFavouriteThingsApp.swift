@@ -11,7 +11,7 @@ import SwiftUI
 struct MyFavouriteThingsApp: App {
     var body: some Scene {
         WindowGroup {
-            FavoriteThingsListView()
+            TradingCardsV2DetailView(playerInfo: bostonBruins, teamGC: bostonBruinsTeam)
         }
     }
 }
