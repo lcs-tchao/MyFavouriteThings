@@ -11,9 +11,9 @@ struct parallelogram3: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
         path.move(to: CGPoint(x: rect.maxX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY/5*4.5)) // Top-right
-        path.addLine(to: CGPoint(x: rect.maxX/5*0.5, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY/5*1))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.minY)) // Top-right
+        path.addLine(to: CGPoint(x: rect.maxX/5*0.4, y: rect.maxY/5*1))
+        path.addLine(to: CGPoint(x: rect.maxX/5*4.6, y: rect.maxY/5*1))
         path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
 
 

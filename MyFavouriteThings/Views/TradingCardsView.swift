@@ -6,27 +6,28 @@
 //
 import SwiftUI
 
-struct FavouriteThingsView: View{
-    let providedFavouriteThings: TradingCardsV2Player
-    
+struct TradingCardsView: View{
+    let cInfo: CardInformation
     var body: some View {
         ZStack{
             Rectangle()
-                .frame (width: 400, height: 300)
-                .opacity(0.2)
+                .fill( cInfo.backgroundGradient)
+                .frame(width: 380, height: 220)
+            
             HStack{
 //                Image(providedFavouriteThings.image)
 //                    .resizable()
 //                    .scaledToFill()
 //                    .frame(width: 150,height: 150,alignment: .center)
 //                    .clipped()
+                Image(cInfo.teamlogo)
                
                 VStack(alignment: .leading){
                     
-                    Text(providedFavouriteThings.name).italic()
-                        .underline()
-                        .font(.custom("Bradley Hand", size: 64))
-                        .foregroundStyle(.cyan)
+//                    Text(providedFavouriteThings.name).italic()
+//                        .underline()
+//                        .font(.custom("Bradley Hand", size: 50))
+//                        .foregroundStyle(.cyan)
                    
                     /*Text(providedFavouriteThings.description)*/
                     
@@ -40,5 +41,5 @@ struct FavouriteThingsView: View{
 }
 
 #Preview{
-    FavouriteThingsView(providedFavouriteThings: hockey)
+    TradingCardsView(cInfo: hockey)
 }
